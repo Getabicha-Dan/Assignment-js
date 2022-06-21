@@ -5,42 +5,51 @@ The first function should print what is returned from
 the functions largest and smallest. */
 
 
-function leapCalcalculator(year){
+function minMax(x,y,z){
+    let max = largest(x,y,z);
+    console.log(max + ' is the max number');
     
-    let condition1=byFour(year);
-    let condition2=byHundered(year);
-    let condition3=byfourHundred(year);
+    let min = smallest(x,y,z);
+    console.log(min +' is the min number');
+}
+  
+function largest(x,y,z){    
+    if( x > y && x > z){ 
 
-    if(condition1 == 0 && condition2 == 0 && condition3 == 0){
+        theNumber = x;
 
-        console.log(' The year is a leap year ')
+    } else if ( y > x && y > z){
+
+        theNumber = y;
+
     } else {
-     
-        console.log(' The year is not a leap year ')
-    }
+
+        theNumber = z;
+   }
+
+   return theNumber;
 }
 
+function smallest(x,y,z){
+    
+    if(x < y && x < z){
 
-function byFour(year){
+        theNumber = x
 
-    dby4 = year % 4;
-    return dby4;
+       } else if(y < x && y < z){
+
+        theNumber = y
+
+       }else{
+        
+        theNumber = z
+       }
+    return theNumber;
 }
 
-
-function byHundered(year){
-    dby100 = year % 100;
-    return  dby100;
-}
+minMax(4,5,9);
 
 
-
-function byfourHundred(year){
-    dby400 = year % 400;
-    return dby400;
-}
-
-leapCalcalculator(1956);
 
 
 
