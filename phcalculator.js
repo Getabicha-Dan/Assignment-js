@@ -2,24 +2,24 @@
 returns whether the value is acidic, neutral or alkaline. 
 (PH value < 7 is acidic, 7 is neutral, > 7 alkaline)*/
 
-function elementProperty(PH){
+function elementProperty(ph){
 
     
-    if(PH > 7 && PH < 14){
+    if(ph > 7 && ph < 14){
 
-        Element = 'alkaline';
+        element = 'alkaline';
 
-    } else if(PH < 7 && PH > 0){
+    } else if(ph < 7 &&  ph > 0){
 
-      Element = 'acidic';
-    } else if(PH === 7){ 
+      element = 'acidic';
+    } else if(ph === 7){ 
 
-      Element = 'neutral';
+      element = 'neutral';
 
     }else{
-      Element ='inavlid'}
+      element ='inavlid'}
 
-    return Element;
+    return element;
 }
 
 elementProperty(9);
