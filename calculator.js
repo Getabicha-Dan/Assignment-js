@@ -14,23 +14,20 @@ function calculator(typeCalculation,x,y){
 
     if(typeCalculation === 'Sum'){
 
-        summation = x + y ;
-        return summation;
-
+        return x + y ;
+      
     } else if(typeCalculation === 'Diffrence'){
 
-      differ = x - y ;
-      return differ;
-
+        return x - y ;
+    
     } else if (typeCalculation==='Product'){
 
-        prodct = x * y ;
-        return prodct;
-
+       return x * y ;
+       
     } else if(typeCalculation === 'Division'){
 
-        div = x / y ;
-        return div;
+       return  x / y ;
+       
     }
 }
 
