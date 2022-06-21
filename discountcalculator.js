@@ -6,14 +6,13 @@ The function should give an error message if the price or percentage are < 0.
 15 = 30 - (30 * (50 / 100));*/
 
 function discountedPrice(price,dsPercentage){
-
-    PriceAfterDiscount = price - (price * (dsPercentage / 100));
+    const number=100;
+    priceAfterDiscount = price - (price * (dsPercentage / number));
 
     if (price < 0 || dsPercentage < 0){
-        PriceAfterDiscount = 'Error';
-
-        return PriceAfterDiscount;
+        priceAfterDiscount = 'Error';       
     }
+     return priceAfterDiscount;
  }
 
 discountedPrice(70,30);
