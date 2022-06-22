@@ -23,7 +23,7 @@ function stockCheker(phoneStore){
      
       let totalStock=0;
       for (i = 0; i < phoneStore.length; i++){ 
-           totalStock = totalStock + phoneStore [i].inStock;
+           totalStock = totalStock + phoneStore[i].inStock;
       }
       return totalStock;
 
