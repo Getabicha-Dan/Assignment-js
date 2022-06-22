@@ -4,10 +4,10 @@ Write a function that takes a parameter array of working hours
 the function should return the sum of the working hours.*/
 
 
-function totalHour(whArray){
+function totalHour(workHourArray){
     let sumHr=0;
-    for (i = 0; i < whArray.length; i++){ 
-         sumHr = sumHr + whArray [i];
+    for (i = 0; i < workHourArray.length; i++){ 
+         sumHr = sumHr + workHourArray [i];
       
     }
     return sumHr;
