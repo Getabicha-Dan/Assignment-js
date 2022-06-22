@@ -8,27 +8,29 @@ It should print the amount of money you have to pay as:
 
 
 
-function totalCost(productC,location){
+let location;
+
+function totalCost(productCost,location){
    
     if (location == 'EU') {
 
-        shippingC = 5;
-        tCost= productC + shippingC;
-        console.log('You have to pay a total of ' + tCost+ '€ , ' + productC +'€ for the product and ' + shippingC+'€ for shipping.');
+        let shippingCost = 5;
+        tCost= productCost + shippingCost;
+        console.log('You have to pay a total of ' + tCost+ '€ , ' + productCost +'€ for the product and ' + shippingCost+'€ for shipping.');
         
-    } else if(location == 'US' || 'Canada') {
+    } else if(location == 'US' || location == 'Canada') {
 
-        shippingC=15;
-        tCost = productC + shippingC;
-        console.log('You have to pay a total of ' + tCost+ '€ , ' + productC +'€ for the product and ' + shippingC+ '€ for shipping.');
+      let shippingCost=15;
+        tCost = productCost + shippingCost;
+        console.log('You have to pay a total of ' + tCost+ '€ , ' + productCost +'€ for the product and ' + shippingCost+ '€ for shipping.');
 
     }else{
 
-        shippingC === 20;
-        tCost=productC + shippingC;
-        console.log('You have to pay a total of ' + tCost+ '€ , ' + productC +'€ for the product and ' + shippingC+ '€ for shipping.');
+        let shippingCost = 20;
+        tCost=productCost + shippingCost;
+        console.log('You have to pay a total of ' + tCost+ '€ , ' + productCost +'€ for the product and ' + shippingCost+ '€ for shipping.');
     }
     return tCost;
 }
-totalCost(50,'US');
+totalCost(50,'Canada');
 
