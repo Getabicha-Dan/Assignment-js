@@ -10,40 +10,49 @@ To determine whether a year is a leap year, follow these steps:
 
 function leapCalcalculator(year){
     
-    let condition1=byFour(year);
-    let condition2=byHundered(year);
-    let condition3=byfourHundred(year);
+    let condition1=evenlyDivisibelBy4(year);
+    let condition2=evenlyDivisbelBy100(year);
+    let condition3=evenlyDivisibelBy400(year);
+   
 
-    if(condition1 == 0 && condition2 == 0 && condition3 == 0){
-
-        console.log(' The year is a leap year ')
-    } else {
-     
-        console.log(' The year is not a leap year ')
+if (condition1==0){
+    condition2;
+} else{
+    console.log(' The year is not a leap year ')
+}
+if (condition2==0){
+    condition3;
+} else{
+    console.log(' The year is not a leap year ')
     }
+if(condition3==0){
+    console.log(' The year is a leap year ')
+} else{
+    console.log(' The year is not a leap year ')
+}
 }
 
 
-function byFour(year){
+function evenlyDivisibelBy4(year){
 
-    dby4 = year % 4;
-    return dby4;
+    divideBy4 = year % 4;
+    return divideBy4;
 }
 
 
-function byHundered(year){
-    dby100 = year % 100;
-    return  dby100;
+function evenlyDivisbelBy100(year){
+    divideBy100 = year % 100;
+    return  divideBy100;
 }
 
 
 
-function byfourHundred(year){
-    dby400 = year % 400;
-    return dby400;
+function evenlyDivisibelBy400(year){
+    divideBy400 = year % 400;
+    return divideBy400;
 }
 
-leapCalcalculator(1956);
+leapCalcalculator(1920);
 
 
 
