@@ -5,26 +5,27 @@ Write a function that takes the products and a product name.
 
 
 
-
-    let phoneStore=[{name: "Iphone 13", price: 1000, inStock:15},
-    {name: "Iphone 10", price: 900, inStock:0},
-    {name: "Samsung 22", price: 1200, inStock:9},
-    {name: "OnePlus Pro", price: 850, inStock:0},
-    {name: "Nokia Note", price: 950, inStock:8},
-    {name: "Iphone 10", price: 1000, inStock:12}];
+let phoneStore=[{name: "Iphone 13", price: 1000, inStock:15},
+{name: "Iphone 10", price: 900, inStock:0},
+{name: "Samsung 22", price: 1200, inStock:9},
+{name: "OnePlus Pro", price: 850, inStock:0},
+{name: "Nokia Note", price: 950, inStock:8},
+{name: "Iphone 10", price: 1000, inStock:12}];
 
 function stockCheker3(phoneStore,nameProduct){
-for(i=0;i < phoneStore.length; i++){
+    let productAvailable;
+    for(i=0;i < phoneStore.length; i++){
 
-if(nameProduct == phoneStore[i].name){
+            if(nameProduct == phoneStore[i].name){
 
-    console.log('True: Product exists')
+            productAvailable == 'True';
+          
+            } else{
 
-} else{
-
-    console.log('False: Product does not exists')
+            productAvailable == 'False';
+           
+            }
+    return productAvailable;
+    }
+    
 }
-
-}
-}
-stockCheker3(phoneStore,"Iphone 12");
